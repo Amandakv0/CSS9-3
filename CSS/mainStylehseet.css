@@ -43,6 +43,7 @@ body{
     align-items: center;
 }
 .backgroundImageMainDiv{
+    border-radius: 16px;
     background-image: url("../images/batmanImg.svg") , url("../images/bacckgroundMainImg.svg");
     background-repeat: no-repeat;
     background-position: bottom 0px right 0px ,center;
