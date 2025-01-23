@@ -13,7 +13,7 @@
 body{
     background-color: #0E0E0E;
 }
-.mainContainer{
+.mainContainer, .mainWrapper{
     display: flex;
     flex-direction: column;
     min-width: 840px;
@@ -92,4 +92,84 @@ button{
 }
 a{
     text-decoration-line: none;
+}
+.mainHeader{
+    color: #FFF;
+    font-size: 32px;
+    font-weight: 700;
+    text-align: center;
+}
+.searchDiv{
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+}
+.searchInputDiv{
+    display: flex;
+    position: relative;
+}
+input:focus{
+    border: none;
+}
+input{
+    border: none;
+}
+.textInput:focus{
+    border: 3px solid #A00;
+}
+.icon{
+    position: absolute;
+    left: 12px;
+    top: 4px;
+    
+}
+
+.textInput{
+    padding: 8px;
+    padding-left: 46px;
+    color: #FFF;
+    border-radius: 24px;
+    background: #191919;
+}
+::placeholder{
+    margin-left: 8px;
+}
+
+.yearsSelect{
+    border: none;
+    padding: 8px 18px;
+    border-radius: 24px;
+    background-color: #191919;
+}
+.iconArrow{
+    position: absolute;
+    top: 8px;
+}
+select{
+    color: #7B7B7B;
+    font-size: 16px;
+}
+select > option{
+    background-color: #191919;
+}
+
+.yearOption:hover{
+    background-color: red;
+    padding: 10px 16px;
+}
+
+.yearsSelectDiv{
+    position: relative;
+}
+.moviesMainCOntainer{
+    display: flex;
+    gap: 24px;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 840px;
+}
+.killerMovieCard{
+    display: flex;
+    flex-wrap: wrap;
+    background-image: url("../images/killerImg.svg");
 }
