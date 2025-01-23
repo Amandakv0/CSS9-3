@@ -1,0 +1,94 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.mainContentWrapper{
+    display: flex;
+    width: 100%;
+    background-color: #0E0E0E;
+    justify-content: center;
+}
+body{
+    background-color: #0E0E0E;
+}
+.mainContainer{
+    display: flex;
+    flex-direction: column;
+    min-width: 840px;
+    gap: 32px;
+}
+.headerMainDiv{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px 0px;
+}
+.headerTextsDiv{
+    display: flex;
+    gap: 12px;
+}
+.whiteNavBarText{
+    color: #FFF;
+    font-size: 16px;
+}
+.navBarGreyText{
+    font-size: 16px;
+    color: #7B7B7B;
+}
+.profileDiv{
+    display: flex;
+    gap: 12px;
+    align-items: center;
+}
+.backgroundImageMainDiv{
+    background-image: url("../images/batmanImg.svg") , url("../images/bacckgroundMainImg.svg");
+    background-repeat: no-repeat;
+    background-position: bottom 0px right 0px ,center;
+    padding: 40px;
+}
+.imageTextsDiv{
+    display: flex;
+    flex-direction: column;
+    gap: 90px;
+}
+.headTextsDiv, .descriptionDiv{
+    width: 350px;
+    display: flex;
+    gap: 8px;
+    flex-direction: column;
+}
+.Title{
+    color: #FFF;
+    font-size: 32px;
+    font-weight: 700;
+}
+.ratdingDiv{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.starsDiv{
+    display: flex;
+    gap: 4px;
+}
+button{
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+.redButton:hover{
+    background-color: green;
+}
+.redButton{
+    border-radius: 8px 32px;
+    background: #A00;
+    box-shadow: 5px 2px 11.9px 0px #A00;
+    padding: 12px 24px;
+    width: 135px;
+    margin-top: 16px;
+}
+a{
+    text-decoration-line: none;
+}
