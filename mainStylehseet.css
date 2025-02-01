@@ -22,7 +22,7 @@ body{
 }
 @media screen and (min-width: 768px) and (max-width: 1024px) {
     .mainContainer{
-        max-width: 768px;
+        min-width: 768px;
     }
 }
 @media screen and (max-width: 767px) {
@@ -252,12 +252,6 @@ select > option{
     width: 100%;
     justify-content: center;
 }
-@media screen and (max-width: 767px) {
-    .movieCardWrapper{
-        max-width: 288px;
-        padding: 23px;
-    }
-}
 .moviesMainCOntainer{
     display: flex;
     gap: 24px;
@@ -269,6 +263,48 @@ select > option{
     }
 }
 
+.redWathnowButton{
+    display: none;
+    border-radius: 8px 32px;
+    background: #A00;
+    box-shadow: 5px 2px 11.9px 0px #A00;
+    padding: 12px 24px;
+}
+.redWathnowButton:hover{
+    display: flex;
+}
+.killerMovieCard:hover{
+    filter: blur(2px);
+    background-image: url("../images/coverImg.svg"), url("../images/killerImg.svg");
+}
+.iCameByCard:hover{
+    filter: blur(2px);
+    background-image: url("../images/coverImg.svg"), url("../images/iCameImg.svg");
+}
+.wiedzimCard:hover{
+    filter: blur(2px);
+    background-image: url("../images/coverImg.svg"), url("../images/wiedzminImg.svg");
+}
+.ashesCard:hover{
+    filter: blur(2px);
+    background-image: url("../images/coverImg.svg"), url("../images/ashesImg.svg");
+}
+.devilsCard:hover{
+    filter: blur(2px);
+    background-image: url("../images/coverImg.svg"), url("../images/the\ devilsOwnImg.svg");
+}
+.pricelesscard:hover{
+    filter: blur(2px);
+    background-image: url("../images/coverImg.svg"), url("../images/pricelessImg.svg");
+}
+.theFirstCard:hover{
+    filter: blur(2px);
+    background-image: url("../images/coverImg.svg"), url("../images/inTheFirstImg.svg");
+}
+.murderCard:hover{
+    filter: blur(2px);
+    background-image: url("../images/coverImg.svg"), url("../images/murderImg.svg");
+}
 .killerMovieCard, .iCameByCard, .wiedzimCard, .ashesCard,
 .devilsCard, .pricelesscard, .theFirstCard, .murderCard{
     display: flex;
@@ -317,19 +353,5 @@ select > option{
     background-image: url("../images/iCameImg.svg");
 }
 .killerMovieCard{
-    position: relative;
     background-image: url("../images/killerImg.svg");
-}
-.moviesMainCOntainer > div:hover{
-    filter: blur(2px);
-    position: relative;
-}
-
-.redWathnowButton{
-    position: relative;
-    border-radius: 8px 32px;
-    background: #A00;
-    box-shadow: 5px 2px 11.9px 0px #A00;
-    padding: 12px 24px;
-    z-index: -2;
 }
